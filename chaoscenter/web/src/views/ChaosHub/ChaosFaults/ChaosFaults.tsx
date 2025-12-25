@@ -111,6 +111,14 @@ function ChaosFaults({ hubDetails, faultCategories, loading, searchValue }: Chao
                   alt={`${fault.name} icon`}
                   style={{ width: 23, height: 23, objectFit: 'contain' }}
                 />
+) : fault.chartName.toLowerCase() === 'vmware' ? (
+  <img
+    src="https://hub.litmuschaos.io/api/icon/3.22.0/vmware/vmware.png"
+    alt="vmware"
+    width={23}
+    height={23}
+    style={{ objectFit: 'contain' }}
+  />
               ) : isSpringbootFault ? (
                 <img
                   src="https://hub.litmuschaos.io/api/icon/3.22.0/spring-boot/spring-boot.png"
